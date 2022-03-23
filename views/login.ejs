@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/img/logodark.svg" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@800&display=swap" rel="stylesheet">
+    <title>Capital Cash</title>
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="form-container sign-up-container">
+            <form action="#">
+                <h1>Crie uma conta</h1>
+                <div class="social-container">
+                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <span>ou insira alguns dados para cadastrar-se</span>
+                <input type="text" placeholder="Name" />
+                <input type="email" placeholder="Email" />
+                <input type="password" placeholder="Password" />
+                <br/>
+                <button>Cadastrar</button>
+            </form>
+        </div>
+        <div class="form-container sign-in-container">
+            <form action="#">
+                <h1>Entrar</h1>
+                <div class="social-container">
+                    <a href="#" class="social"><FaFacebookF /></a>
+                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <span>ou use sua conta</span>
+                <input type="email" placeholder="Email" />
+                <input type="password" placeholder="Password" />
+                <a href="#">Esqueceu sua senha?</a>
+                <br/>
+                <button>Entrar</button>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <img src="/img/logodark.svg" alt="" class="logo">
+                    <br/>
+                    <h1>Bem vindo de volta!</h1>
+                    <p>Para se manter conectado conosco, faça login com suas informações pessoais</p>
+                    <button class="ghost" id="signIn">Entrar</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <img src="/img/logodark.svg" alt="" class="logo">
+                    <br/>
+                    <h1>Sua primeira vez em nosso site?</h1>
+                    <p>Insira seus dados pessoais e comece a jornada conosco</p>
+                    <button class="ghost" id="signUp">Cadastrar-se</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+         
+        const signUpButton = document.getElementById('signUp');
+        const signInButton = document.getElementById('signIn');
+        const container = document.getElementById('container');
+
+        signUpButton.addEventListener('click', () => {
+	        container.classList.add("right-panel-active");
+        });
+
+        signInButton.addEventListener('click', () => {
+	        container.classList.remove("right-panel-active");
+        });
+    </script>
+</body>
+</html>
