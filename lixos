@@ -1,0 +1,14 @@
+const Usuário = require('./server/app/models/User')
+const passport_config = require('./server/config/passport')
+const passport = require('passport')
+
+app.use(flash())
+app.use(passport.initialize())
+app.use(passport.session())
+
+app.post('/login',passport_config.authenticate('local', {
+    successRedirect: '/projetos',
+    failureRedirect: '/login',
+    failureFlash: true
+})
+)
