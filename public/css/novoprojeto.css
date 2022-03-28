@@ -54,6 +54,45 @@ body{
 .cabecalhoLogin:hover{
     color:#20332c
 }
+p{
+    color: #7b7b7b;
+}
+
+input, select{
+    border: 2px solid #f0f0f0;
+    display: block;
+    border-radius: 10px;
+    font-size: 14px;
+    width: 100%;
+    padding: 10px;
+}
+
+.botaoProjeto{
+    background-color:#20332c;
+    color: #fff;
+    font-size: 14px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+.botaoProjeto:hover{
+    background-color: #98f576;
+    color:#20332c;
+    transition: 0.4s;
+}
+.pagina{
+    text-align: center;
+    padding: 2em;
+}
+.formulario{
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    padding: 2em;
+    line-height: 3.5;
+}
+
 
 .rodape{
     background-color: #20332c;

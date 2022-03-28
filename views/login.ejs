@@ -14,33 +14,33 @@
 <body>
     <div class="container" id="container">
         <div class="form-container sign-up-container">
-            <form method="POST">
+            <form method="POST" action="/cadastrar">
                 <h1>Crie uma conta</h1>
                 <div class="social-container">
                     <a href="#" class="social"><img src="/img/logoFace.svg" class="logoFace"></i></a>
                     <a href="#" class="social"><img src="/img/logoGoogle.svg" class="logoGoogle"></i></a>
                 </div>
                 <span>ou insira alguns dados para cadastrar-se</span>
-                <input type="text" name="nome" placeholder="Nome" />
-                <input type="email" name="email" placeholder="Email" />
-                <input type="password" name="password" placeholder="Senha" />
+                <input type="text" name="txtName" placeholder="Nome" />
+                <input type="email" name="txtEmail" placeholder="Email" />
+                <input type="password" name="txtSenha" placeholder="Senha" />
                 <br/>
-                <button type="submit">Cadastrar</button>
+                <button type="submit" value="cadastrar">Cadastrar</button>
             </form>
         </div>
         <div class="form-container sign-in-container">
-            <form method="POST">
+            <form method="POST" action="/login">
                 <h1>Entrar</h1>
                 <div class="social-container">
                     <a href="#" class="social"><img src="/img/logoFace.svg" class="logoFace"></i></a>
                     <a href="#" class="social"><img src="/img/logoGoogle.svg" class="logoGoogle"></i></a>
                 </div>
                 <span>ou use sua conta</span>
-                <input type="email" name="email" placeholder="Email" />
-                <input type="password" name="password" placeholder="Senha" />
+                <input type="email" name="txtEmail" placeholder="Email" />
+                <input type="password" name="txtSenha" placeholder="Senha" />
                 <a href="#">Esqueceu sua senha?</a>
                 <br/>
-                <button type="submit">Entrar</button>
+                <button type="submit" name="" id="" value="entrar">Entrar</button>
             </form>
         </div>
         <div class="overlay-container">
